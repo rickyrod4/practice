@@ -34,6 +34,16 @@ class SLL{
     constructor(){
         this.head = null;
     }
+
+    view(my_node){
+        var currentNode = this.head;
+        while(currentNode){
+            console.log('Current node is: ${currentNode.value}');
+            currentNode = currentNode.next;
+        }
+    }
 }
+
+view(my_node);
 
 
