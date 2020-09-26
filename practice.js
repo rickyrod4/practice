@@ -98,14 +98,58 @@ console.log('Insert At')
 
 function insertAt(arr, index, val){
     console.log(arr, '- Insert:', val, '@ index:',index);
-    
+    for(var i = arr.length; i > index; i--){
+        arr[i] = arr[i-1];
+    }
+    arr[index] = val;
+    console.log('New Array: ', arr);
+    return arr;
 
 }
 
-insertAt(['hello', 'world', 'my', 'name', 'is', 'Ricky'], 4, 'Tomorrow')
+insertAt([2,4,6,8,10], 2, 'Hello');
 
 
 
 
+console.log('----------------------------------');
 
 
+
+console.log('Min To Front')
+//Min to Front
+//Given an array of comparable values, move the lowest element to array’s front, shifting backward any elements previously ahead of it. 
+//Do not otherwise change the array’s order. Given [4,2,1,3,5], change it to [1,4,2,3,5] and return it. 
+//As always, do this without using built-in functions.
+
+function minToFront(arr){
+    console.log(arr)
+    //iterate thru the array
+    var min = arr[arr.length-1];
+ 
+
+    for(var i = arr.length-1; i > 0; i--){
+        //find the min value
+        if(arr[i]<min){
+            min = arr[i];
+            var index = i;
+        }
+        //compare values move lower value to the left
+    }
+    var temp = arr[arr.length-1];
+    for(var i = index; i > 0; i--){
+        if(arr[i] < arr[i-1]){
+            //move the lowest value all the way to the left
+            temp = arr[i-1];
+            arr[i-1]=arr[i];
+            arr[i] = temp;
+        }
+    }
+    console.log(min);
+    console.log(arr);
+    console.log(index)
+    return arr;
+
+}
+minToFront([5,14,11,20,10,8,17,6]);
+console.log('------------------------------------')
