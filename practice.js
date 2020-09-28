@@ -136,7 +136,7 @@ function minToFront(arr){
         }
         //compare values move lower value to the left
     }
-    var temp = arr[arr.length-1];
+    var temp;
     for(var i = index; i > 0; i--){
         if(arr[i] < arr[i-1]){
             //move the lowest value all the way to the left
@@ -151,5 +151,5 @@ function minToFront(arr){
     return arr;
 
 }
-minToFront([5,14,11,20,10,8,17,6]);
+minToFront([5,20,10,2,17,6]);
 console.log('------------------------------------')
