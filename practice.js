@@ -155,6 +155,14 @@ minToFront([5,20,10,2,17,6]);
 console.log('------------------------------------')
 
 
-def max(array){
-    
+function max(array){
+    var maximum = array[0];
+    for(var i = 0; i<array.length;i++){
+        if(array[i]>maximum){
+            maximum = array[i];
+        }
+    }
+    return maximum;
 }
+
+console.log(max([0,3,4,5,1]))
