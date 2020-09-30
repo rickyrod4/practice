@@ -153,3 +153,8 @@ function minToFront(arr){
 }
 minToFront([5,20,10,2,17,6]);
 console.log('------------------------------------')
+
+
+def max(array){
+    
+}
