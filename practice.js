@@ -166,3 +166,17 @@ function max(array){
 }
 
 console.log(max([0,3,4,5,1]))
+
+
+console.log('------------------------------')
+console.log('Add Up To n Function')
+function addUpTo(n){
+    var total = 0;
+    for(var i = 0;i <= n; i++){
+        total += i;
+    }
+    return total;
+}
+
+console.log(addUpTo(6));
+
