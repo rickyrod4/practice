@@ -180,3 +180,33 @@ function addUpTo(n){
 
 console.log(addUpTo(6));
 
+console.log('---------------')
+
+charCount('aaaaaa'); //{a:4}
+
+
+function charCount(str){
+    //do something
+    // return an object with keys that are lowercase alphanumeric characters in the string
+    //values should be th
+
+    //make object to return at end
+    var result = {};
+    //loop thru string, for each character...
+    for (var i = 0; i < str.length; i++){
+        //if the char is a number/letter key in object, add one to count
+        var char = str[i].toLowerCase();
+        if(result[char] > 0){
+            result[char]++;
+        }
+        //if the char is a number/letter not in object, add it and set value to 1
+        else{
+            result[char] = 1;
+        }
+        //if character is something else (space, period, ect.) dont do anything
+    }
+    //return opject
+    return result;
+}
+console.log('CharCount')
+console.log(charCount("Hi there!"));
