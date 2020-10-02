@@ -26,3 +26,9 @@ def sumArray(arr):
 
 
 print(sumArray([1,2,3,4]))
+print('-------------------------')
+
+#Given an array reverse the order
+def reverseArray(arr):
+    pass
+
