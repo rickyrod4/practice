@@ -10,5 +10,19 @@ print(array)
 #for item in array:
  #   print(item)
 
-for i in range(100,10,-10):
-    print(i)
+#for i in range(100,10,-10):
+    #print(i)
+
+
+#Given an integer array return the sum of the values in that array
+def sumArray(arr):
+    print('This is the Original Array:', arr)
+    sum = 0
+    for item in arr:
+        sum = sum + item
+
+    return sum
+
+
+
+print(sumArray([1,2,3,4]))
