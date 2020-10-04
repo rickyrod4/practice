@@ -196,17 +196,31 @@ function charCount(str){
     for (var i = 0; i < str.length; i++){
         //if the char is a number/letter key in object, add one to count
         var char = str[i].toLowerCase();
-        if(result[char] > 0){
-            result[char]++;
+        if(/[a-z0-9]/.test(char)){
+            if(result[char] > 0){
+                result[char]++;
+            }
+            //if the char is a number/letter not in object, add it and set value to 1
+            else{
+                result[char] = 1;
+            }
+            //if character is something else (space, period, ect.) dont do anything
         }
-        //if the char is a number/letter not in object, add it and set value to 1
-        else{
-            result[char] = 1;
-        }
-        //if character is something else (space, period, ect.) dont do anything
     }
     //return opject
     return result;
 }
 console.log('CharCount')
 console.log(charCount("Hi there!"));
+
+
+// given an array and an arbitrary initial value x keep the running sum above 1
+function minValue(arr){
+    var x = 0;// need to figure this part out
+    var sum = x;
+    //iterate thru the array
+    for(var i =0; i <arr.length; i++){
+        sum = sum + arr[i];
+    }
+    
+}
