@@ -27,8 +27,14 @@ def sumArray(arr):
 
 print(sumArray([1,2,3,4]))
 print('-------------------------')
-
+from math import *
 #Given an array reverse the order
 def reverseArray(arr):
-    pass
+    print(arr)
 
+    for i in range(0,floor(len(arr)/2)):
+        arr[i], arr[len(arr)-i-1] = arr[len(arr)-i-1], arr[i]
+
+    print(arr)
+
+reverseArray([1,2,3,4])
