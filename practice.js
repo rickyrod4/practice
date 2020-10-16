@@ -224,3 +224,26 @@ function minValue(arr){
     }
     
 }
+
+console.log('----------------------------------------');
+
+//Setting and Swapping
+function setting_and_swapping(){
+    let myNumber = 42;
+    let myName = 'Ricky';
+    console.log('Original Number:', myNumber);
+    console.log('Original Name:', myName);
+
+    let temp = myNumber;
+    myNumber = myName;
+    myName = temp;
+
+    console.log('----------------------------------------');
+
+    console.log('My new Number is:', myNumber);
+    console.log('My new name is:', myName);
+}
+
+setting_and_swapping()
+
+
