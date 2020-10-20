@@ -63,4 +63,47 @@ def printSum():
             sum += i
 
     print(sum)
-printSum()
+#printSum()
+
+def iterateArray(arr):
+    for item in arr:
+        print(item)
+
+#iterateArray([2,4,6,8])
+
+def findMax(arr):
+    max = arr[0]
+
+    for item in arr:
+        if item > max:
+            max = item
+    return max
+
+#print(findMax([2,8,6,14,5]))
+
+def average(arr):
+    sum = 0
+    for item in arr:
+        sum += item
+    average = sum / len(arr)
+    return average
+#print(average([2,4,6,8,10]))
+
+def oddArray():
+    array = []
+    for i in range(1, 256):
+        if i % 2 != 0:
+            array.append(i)
+
+    print(array)
+#oddArray()
+
+def greaterThanY(arr, num):
+    newArray = []
+    for item in arr:
+        if item > num:
+            newArray.append(item)
+    print(len(newArray))
+
+#greaterThanY([2,4,6,8,10,12,45,485,212], 8)
+
