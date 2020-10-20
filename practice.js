@@ -13,13 +13,13 @@ function largest(arr){
     return max;
 }
  
-console.log(largest([0,2,14,6,8]));
+//console.log(largest([0,2,14,6,8]));
 
 
 console.log('--------------------------------------');
 
 
-console.log('Singly Linked List');
+//console.log('Singly Linked List');
 
 class Node{
     constructor(value){
@@ -84,13 +84,13 @@ function popFront(arr){
     return first_value;
 }
 
-console.log(popFront([1,2,3,4,5]))
+//console.log(popFront([1,2,3,4,5]))
 
 
-console.log('----------------------------------');
+//console.log('----------------------------------');
 
 
-console.log('Insert At')
+///console.log('Insert At')
 //Insert At
 //Given an array, index, and additional value, insert the value into array at given index. 
 //Do this without using built-in array methods. 
@@ -107,7 +107,7 @@ function insertAt(arr, index, val){
 
 }
 
-insertAt([2,4,6,8,10], 2, 'Hello');
+//insertAt([2,4,6,8,10], 2, 'Hello');
 
 
 
@@ -151,7 +151,7 @@ function minToFront(arr){
     return arr;
 
 }
-minToFront([5,20,10,2,17,6]);
+//minToFront([5,20,10,2,17,6]);
 console.log('------------------------------------')
 
 
@@ -165,7 +165,7 @@ function max(array){
     return maximum;
 }
 
-console.log(max([0,3,4,5,1]))
+//console.log(max([0,3,4,5,1]))
 
 
 console.log('------------------------------')
@@ -178,7 +178,7 @@ function addUpTo(n){
     return total;
 }
 
-console.log(addUpTo(6));
+//console.log(addUpTo(6));
 
 console.log('---------------')
 
@@ -210,8 +210,7 @@ function charCount(str){
     //return opject
     return result;
 }
-console.log('CharCount')
-console.log(charCount("Hi there!"));
+
 
 
 // given an array and an arbitrary initial value x keep the running sum above 1
@@ -244,7 +243,7 @@ function setting_and_swapping(){
     console.log('My new name is:', myName);
 }
 
-setting_and_swapping()
+//setting_and_swapping()
 
 
 function countdown(n){
@@ -256,4 +255,4 @@ function countdown(n){
     }
     return arr
 }
-console.log(countdown(25));
+//console.log(countdown(25));

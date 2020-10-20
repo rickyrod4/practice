@@ -38,7 +38,7 @@ def printAndReturn(arr):
 
 
 def countdown(n):
-    a = 0
+    a = 1
     arr = []
     while n>0:
         print(n)
@@ -47,4 +47,12 @@ def countdown(n):
         n -= 1
     return arr
 
-print(countdown(5))
+#print(countdown(5))
+
+def oddNumbers():
+    for i in range(1,1001):
+        if i % 2 != 0:
+            print(i)
+
+#oddNumbers()
+
