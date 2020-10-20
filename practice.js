@@ -247,3 +247,13 @@ function setting_and_swapping(){
 setting_and_swapping()
 
 
+function countdown(n){
+    var arr = []
+    temp = n
+    for(var i = 0; i < n+1; i++){
+        arr[i] = temp
+        temp--
+    }
+    return arr
+}
+console.log(countdown(25));
