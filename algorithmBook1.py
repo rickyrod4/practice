@@ -3,7 +3,7 @@ def print_count():
     count = 0
     for i in range(1,256):
        print(i)
-print_count()
+#print_count()
 
 
 def multiplesOfSix():
@@ -56,3 +56,11 @@ def oddNumbers():
 
 #oddNumbers()
 
+def printSum():
+    sum = 0
+    for i in range(1,5001):
+        if i % 2 != 0:
+            sum += i
+
+    print(sum)
+printSum()
