@@ -107,3 +107,31 @@ def greaterThanY(arr, num):
 
 #greaterThanY([2,4,6,8,10,12,45,485,212], 8)
 
+def squareValues(arr):
+    for i in range(0,len(arr)):
+        arr[i] = arr[i] ** 2
+
+    return arr
+#print(squareValues([2,3,4,5,6,7]))
+
+
+
+def countingValleys(steps, path):
+    seaLevel = 0
+    valley = 0
+    empty_string = ''
+    for i in range(0,len(path)):
+        if path[i] == 'U':
+            seaLevel += 1
+            for j in range(i+1,len(path)):
+                if path[j]
+        elif path[i] =='D':
+            seaLevel -= 1
+            
+        if seaLevel < 0:
+
+    print('Valleys:', valley)
+    return valley
+    
+
+countingValleys(8, 'UDDDUDUU')
