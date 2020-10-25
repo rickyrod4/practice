@@ -35,3 +35,4 @@ my_dict = {
 print(my_dict)
 for k in my_dict:
     print(my_dict[k])
+
