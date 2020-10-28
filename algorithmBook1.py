@@ -32,3 +32,6 @@ def selectionSort(arr):
 # iterate a reverse for loop
 def insertionSort(arr):
     pass
+
+
+
