@@ -36,3 +36,23 @@ def jumpingOnClouds(c):
                 i+=1
     return jumps
 jumpingOnClouds([0,0,1,0,0,1,0])
+
+import math
+def repeatedString(s, n):
+    #I must create the infinite string to the number n
+        #divide n by len(s) multiply
+    mult = math.floor(n/len(s))
+    remainder = n % len(s)
+    a_count = s.count('a')
+    a_count = a_count * mult
+    if remainder != 0:
+        for i in range(remainder):
+            if s[i] == 'a':
+                a_count += 1
+    #make an 'a' count variable
+    #loop thru the string
+    #if 'a' is in the string add 1 to the count
+    return a_count
+
+
+repeatedString('abab', 10)
