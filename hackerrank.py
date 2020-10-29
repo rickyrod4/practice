@@ -56,3 +56,7 @@ def repeatedString(s, n):
 
 
 repeatedString('abab', 10)
+
+word = 'hello'
+for letter in word:
+    print(letter)
